@@ -78,10 +78,10 @@ export class HomePage {
       this.conversaObj.id=false;
       this.conversaObj.possibilidades = <Array<string>> data.context.possibilidades;
       this.conversaObj.texto = data.output.text;
-      // this.abrirGif = true;
-      // this.tts.speak({locale: 'pt-BR', rate: 0.9, text: data.output.text}).then(() =>{
-      //  this.fecharGif();
-      // })
+       this.abrirGif = false;
+       this.tts.speak({locale: 'pt-BR', rate: 0.9, text: data.output.text}).then(() =>{
+       this.fecharGif();
+      })
       this.listaConversa.push(this.conversaObj);
       this.conversaObj = new Conversa;
       this.conversa.push(data.output.text);
@@ -166,6 +166,7 @@ export class HomePage {
       });
     });
   }
+
 
   // CHAMADO QUANDO É PARA REFAZER A TELA E INICIAR UMA NOVA CONVERSA.
   iniciar() {

@@ -1,4 +1,4 @@
-<ion-header >
+<!--<ion-header >
   <ion-navbar color="primary">
     <ion-title style="background: #4d7498">
 
@@ -7,28 +7,32 @@
     </ion-title>
 
   </ion-navbar>
-</ion-header>
+</ion-header>-->
 
 <ion-content *ngIf="!abrirGif" style="background-color: #252525;" >
-<div style="height:130px">
-  <img  (click)="startListening()"  style="height:130%; margin-top: 60%; position: relative;margin-left: 50%;transform: translateX(-50%);" center src="assets/img/nizo_rm.gif"/>
+  <img  (click)="iniciar()" style="height:10%; " src="assets/img/reset.jpg"/>
+
+<div style="height:15%">
+  <img  style="height:130%; margin-top: 6%; position: relative;margin-left: 50%;transform: translateX(-50%);" center src="assets/img/inicio1.jpg"/>
 </div>
-  
+
+<div style="height:20%;">
+  <img  (click)="startListening()"  style="height:20%; margin-top: 24%; position: absolute;margin-left: 50%;transform: translateX(-50%);" center src="assets/img/botao.jpg"/>
+</div>
 
 
 
-<ion-footer *ngIf="mostrarRodape">
-    <ion-card>
-    <ion-card-header style="text-align: center;">
-    Pergunte sobre o Rei Davi
-  </ion-card-header>
-  </ion-card>
-</ion-footer>
+<div style="margin-top: 32%;height:0%;width:130%" >
+    <img   center src="assets/img/inicio2.jpg"/>
+
+</div>
 
 
 </ion-content>
+
 <ion-content *ngIf="abrirGif" style="background-color: black;">
   <div >
-    <img  src="assets/img/giphy.gif" style="margin-top: 36%; position: relative;margin-left: 50%;transform: translateX(-50%);"/>
+    <img  src="assets/img/giphy.gif" style="margin-top: 33%; position: relative;margin-left: 50%;transform: translateX(-50%);"/>
   </div>
 </ion-content>
+
