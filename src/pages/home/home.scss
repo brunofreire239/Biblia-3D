@@ -25,6 +25,23 @@ page-home {
         padding: 0px;
   }
 
+  .teste.transition{
+     x: 200 };
 
 
+     .grow:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
 }
+
+  .swing:hover
+  {
+          -webkit-animation: swing 1s ease;
+          animation: swing 1s ease;
+          -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  }
+}
+

@@ -170,8 +170,11 @@ export class HomePage {
 
   // CHAMADO QUANDO É PARA REFAZER A TELA E INICIAR UMA NOVA CONVERSA.
   iniciar() {
-    this.navCtrl.setRoot(HomePage);
-
+    //this.navCtrl.setRoot(HomePage);
+    let element = document.getElementById('teste');
+    if(element){
+      element.removeAttribute('class');
+    }
   }
 
 enviarteste(){
